@@ -1,9 +1,14 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [
+export const APP_ROUTES: Routes = [
   {
-    path: '',
+    path: 'to-do-list',
     loadChildren: () =>
-      import('./modules/feature.module').then((m) => m.FeatureModule),
+      import('./modules/todo/todo.module').then((m) => m.ToDoModule),
+  },
+  //DEFAULT PATH
+  {
+    path: '**',
+    redirectTo: 'to-do-list',
   },
 ];

@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { FEATURE_A_ROUTES } from './feature-a.routes';
 import { SampleService } from './services/sample.service';
+import { TODO_ROUTES } from './todo.routes';
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule, RouterModule.forChild(FEATURE_A_ROUTES)],
+  imports: [CommonModule, RouterModule.forChild(TODO_ROUTES)],
   providers: [SampleService],
 })
-export class FeatureAModule {}
+export class ToDoModule {}

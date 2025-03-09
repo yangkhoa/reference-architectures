@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 
-export const FEATURE_A_ROUTES: Routes = [
+export const TODO_ROUTES: Routes = [
   {
     path: '',
     pathMatch: 'full',
